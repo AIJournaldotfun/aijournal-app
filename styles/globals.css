@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Keyframe Animation */
+@keyframes streakAnimation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Streaks Styling */
+.streak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00ff00, rgba(0, 255, 0, 0));
+  opacity: 0.6;
+  animation: streakAnimation 2s linear infinite;
+}
+
+/* Randomize each streak */
+.streak:nth-child(1) {
+  left: 10%;
+  animation-duration: 2s;
+}
+.streak:nth-child(2) {
+  left: 30%;
+  animation-duration: 2.5s;
+}
+.streak:nth-child(3) {
+  left: 50%;
+  animation-duration: 1.8s;
+}
+.streak:nth-child(4) {
+  left: 70%;
+  animation-duration: 2.3s;
+}
+.streak:nth-child(5) {
+  left: 90%;
+  animation-duration: 2.1s;
+}
