@@ -55,7 +55,7 @@ export default function Journal({ summary, improvements }) {
           </svg>
         </a>
         <a
-          href="https://github.com/yourhandle"
+          href="https://github.com/AIJournaldotfun/aijournal-app"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 shadow transition-transform transform hover:scale-110"

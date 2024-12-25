@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import * as THREE from "three"; // Required for Vanta.NET
 import NET from "vanta/dist/vanta.net.min"; // Vanta.NET for animated background
-import "../styles/globals.css";
+
 
 export default function Home() {
   const router = useRouter();
@@ -57,7 +57,7 @@ export default function Home() {
 
         {/* GitHub Button */}
         <a
-          href="https://github.com/yourhandle"
+          href="https://github.com/AIJournaldotfun/aijournal-app"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 shadow transition-transform transform hover:scale-110"
